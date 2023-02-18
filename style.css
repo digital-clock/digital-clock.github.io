@@ -17,4 +17,5 @@ body {
     color: #17D4FE;
     font-size: 20vw;
     font-family: 'Abel', sans-serif;
+    transition: 5s
 }
