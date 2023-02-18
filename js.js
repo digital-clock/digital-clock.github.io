@@ -1,3 +1,5 @@
+let grade = 0;
+
 function showTime(){
     let date = new Date();
     let h = date.getHours(); // 0 - 23
@@ -5,7 +7,7 @@ function showTime(){
     let s = date.getSeconds(); // 0 - 59
     let session = "AM";
 
-    let grade = 0;
+    
     
     if(h == 0){
         h = 12;
@@ -27,7 +29,7 @@ function showTime(){
     setTimeout(showTime, 1000);
     
     document.querySelector('.clock').style.filter = 'hue-rotate('+ grade +'deg)';
-    grade += 10;
+    grade += 30;
     
 }
 
