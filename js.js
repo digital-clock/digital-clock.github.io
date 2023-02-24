@@ -1,3 +1,13 @@
+function fullscreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+    }
+}
+
 let grade = 0;
 
 function showTime(){
@@ -34,13 +44,3 @@ function showTime(){
 }
 
 showTime();
-
-function fullscreen() {
-    if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-    } else {
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        }
-    }
-}
