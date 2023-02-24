@@ -39,7 +39,7 @@ function showTime(){
     setTimeout(showTime, 1000);
     
     document.querySelector('.clock').style.webkitFilter = 'hue-rotate('+ grade +'deg)';
-    grade += 30;
+    grade += 15;
     
 }
 
